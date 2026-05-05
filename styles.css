@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #3a0ca3);
+    color: white;
+}
+
+/* HLAVIČKA */
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* KONTEJNER */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* KARTY */
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+h2 {
+    color: #ff4d6d;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* ZVÝRAZNĚNÍ */
+.highlight {
+    color: #ffd166;
+    font-weight: bold;
+}
+
+/* TLAČÍTKO */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff4d6d;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff758f;
+}
+
+/* PATIČKA */
+footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+/* RESPONSIVE (mobil) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* udělá kolečko */
+    object-fit: cover;  /* ořízne fotku hezky */
+    border: 4px solid white;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
